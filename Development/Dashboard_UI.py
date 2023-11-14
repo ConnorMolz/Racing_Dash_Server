@@ -65,30 +65,36 @@ s = so.socket(so.AF_INET, so.SOCK_STREAM)
 s.connect((ip, port))
 
 root = tk.Tk() #initiliseing of the Mainwindow named root
-root.geometry("400x400") #confi root
-root.resizable(height=False, width=False) #confi root
+w, h= root.winfo_x(), root.winfo_y()
+#root.geometry("400x300") #confi root
+root.attributes('-fullscreen', True)
+root.geometry("%dx%d+0+0" % (w,h))
+#root.geometry("480x360") #Debugging
+root.bind("<Escape>", lambda e: root.quit())
+#root.resizable(height=False, width=False) #confi root
+
 
 #Button ABS_up
-ABS_up_Button = tk.Button(text='ABS+', command=ABS_up).pack()
+ABS_up_Button = tk.Button(text='ABS+', command=ABS_up, font=(('Ariel',20))).place(x=0, y=10)
 
 #Button ABS_down
-ABS_up_Button = tk.Button(text='ABS-', command=ABS_down).pack()
+ABS_up_Button = tk.Button(text='ABS-', command=ABS_down, font=(('Ariel',20))).place(x=0, y=80)
 
 #Button TC1_up
-ABS_up_Button = tk.Button(text='TC1+', command=TC1_up).pack()
+ABS_up_Button = tk.Button(text='TC1+', command=TC1_up, font=(('Ariel',20))).place(x=100, y=10)
 
 #Button TC1_down
-ABS_up_Button = tk.Button(text='TC1-', command=TC1_down).pack()
+ABS_up_Button = tk.Button(text='TC1-', command=TC1_down, font=(('Ariel',20))).place(x=100, y=80)
 
 #Button TC2_up
-ABS_up_Button = tk.Button(text='TC2+', command=TC2_up).pack()
+ABS_up_Button = tk.Button(text='TC2+', command=TC2_up, font=(('Ariel',20))).place(x=200, y=10)
 
 #Button TC2_down
-ABS_up_Button = tk.Button(text='TC2-', command=TC2_down).pack()
+ABS_up_Button = tk.Button(text='TC2-', command=TC2_down, font=(('Ariel',20))).place(x=200, y=80)
 
 #Button ING
-ABS_up_Button = tk.Button(text='ING', command=ING).pack()
+ABS_up_Button = tk.Button(text='ING', command=ING, font=(('Ariel',20))).place(x=300, y=10)
 
 #Button LIGHT
-ABS_up_Button = tk.Button(text='LIGHT', command=LIGHT).pack()
+ABS_up_Button = tk.Button(text='LIGHT', command=LIGHT, font=(('Ariel',20))).place(x=300, y=80)
 root.mainloop()
