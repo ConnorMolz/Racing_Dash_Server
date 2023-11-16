@@ -75,26 +75,27 @@ root.bind("<Escape>", lambda e: root.quit())
 
 
 #Button ABS_up
-ABS_up_Button = tk.Button(text='ABS+', command=ABS_up, font=(('Ariel',20))).place(x=0, y=10)
+ABS_up_Button = tk.Button(text='ABS+', command=ABS_up, font=(('Ariel',20)), width=20, height=8).grid(column=0, row=0)
 
 #Button ABS_down
-ABS_up_Button = tk.Button(text='ABS-', command=ABS_down, font=(('Ariel',20))).place(x=0, y=80)
+ABS_up_Button = tk.Button(text='ABS-', command=ABS_down, font=(('Ariel',20)), width=20, height=8).grid(column=0, row=1)
 
 #Button TC1_up
-ABS_up_Button = tk.Button(text='TC1+', command=TC1_up, font=(('Ariel',20))).place(x=100, y=10)
+ABS_up_Button = tk.Button(text='TC1+', command=TC1_up, font=(('Ariel',20)), width=20, height=8).grid(column=1, row=0)
 
 #Button TC1_down
-ABS_up_Button = tk.Button(text='TC1-', command=TC1_down, font=(('Ariel',20))).place(x=100, y=80)
+ABS_up_Button = tk.Button(text='TC1-', command=TC1_down, font=(('Ariel',20)), width=20, height=8).grid(column=1, row=1)
 
 #Button TC2_up
-ABS_up_Button = tk.Button(text='TC2+', command=TC2_up, font=(('Ariel',20))).place(x=200, y=10)
+ABS_up_Button = tk.Button(text='TC2+', command=TC2_up, font=(('Ariel',20)), width=20, height=8).grid(column=2, row=0)
 
 #Button TC2_down
-ABS_up_Button = tk.Button(text='TC2-', command=TC2_down, font=(('Ariel',20))).place(x=200, y=80)
+ABS_up_Button = tk.Button(text='TC2-', command=TC2_down, font=(('Ariel',20)), width=20, height=8).grid(column=2, row=1)
 
 #Button ING
-ABS_up_Button = tk.Button(text='ING', command=ING, font=(('Ariel',20))).place(x=300, y=10)
+ABS_up_Button = tk.Button(text='ING', command=ING, font=(('Ariel',20)), width=20, height=8).grid(column=3, row=0)
 
 #Button LIGHT
-ABS_up_Button = tk.Button(text='LIGHT', command=LIGHT, font=(('Ariel',20))).place(x=300, y=80)
+ABS_up_Button = tk.Button(text='LIGHT', command=LIGHT, font=(('Ariel',20)), width=20, height=8).grid(column=3, row=1)
+
 root.mainloop()
