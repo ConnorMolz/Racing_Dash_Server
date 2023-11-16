@@ -10,33 +10,33 @@ def data_manager(data): #Management function for the recived data form the clien
     if data in valid_data: #checking if the command is vaild
         print(data, ' is a valid command') #Debugging
         if data == b'ABS+':
-            pg.hotkey('alt','g')
+            pg.hotkey('g')
             return
         if data == b'ABS-':
-            pg.hotkey('alt','r')
+            pg.hotkey('r')
             return
         if data == b'TC1+':
-            pg.hotkey('alt','w')
+            pg.hotkey('w')
             return
         if data == b'TC1-':
-            pg.hotkey('alt','k')
+            pg.hotkey('k')
             return
         if data == b'TC2+':
-            pg.hotkey('alt','j')
+            pg.hotkey('j')
             return
         if data == b'TC2-':
-            pg.hotkey('alt','d')
+            pg.hotkey('d')
             return
         if data == b'ING':
-            pg.hotkey('alt','s')
+            pg.hotkey('s')
             return
         if data == b'LIGHT':
-            pg.hotkey('alt','q')
+            pg.hotkey('q')
             return
     else:
         print(data, 'is a invalid command') #Debugging
 
-Host = "127.0.0.1" #Placeholder for the IP
+Host = "192.168.0.159" #Placeholder for the IP
 Port = 65432 #Portnummber
 
 server = so.socket(so.AF_INET, so.SOCK_STREAM) #TCP Socket is created
