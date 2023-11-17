@@ -1,6 +1,6 @@
 try:
     import socket as so #import of the socket to create a connection with the client
-    import pyautogui as pg
+    import pyautogui as pg #Import for the key input
 except:
     print("Check the Packages, something went wrong! :/") #Debugging
 print("Packages loaded") #Debugging
@@ -36,7 +36,7 @@ def data_manager(data): #Management function for the recived data form the clien
     else:
         print(data, 'is a invalid command') #Debugging
 
-Host = "192.168.0.159" #Placeholder for the IP
+Host = "127.0.0.1" #Placeholder for the IP
 Port = 65432 #Portnummber
 
 server = so.socket(so.AF_INET, so.SOCK_STREAM) #TCP Socket is created
