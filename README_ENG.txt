@@ -7,17 +7,33 @@ How to use:
 
 Hotkeys:
 
-ABS+ : ALT+G
-ABS- : ALT+R
-TC1+ : ALT+W
-TC1- : ALT+K
-TC2+ : ALT+J
-TC2- : ALT+D
-ING  : ALT+S
-LIGHT: ALT+Q
+ABS+ : G
+ABS- : R
+TC1+ : W
+TC1- : K
+TC2+ : J
+TC2- : D
+ING  : S
+LIGHT: Q
 
 Directory's:
 
 DE is the German version (text in program)
 EN is the english version (text in program)
 Development is whole program but with comments and optimised for development
+
+Dependencis:
+
+Server:
+    Python 11.x or newer
+    pyautogui
+    socket
+UI:
+    Python 11.x or newer
+    tkinter
+    socket
+
+Comment:
+
+The software still in development, so it can contain errors and bugs
+so please report it on Github to help me to improve the software

@@ -8,14 +8,14 @@ Programm starten:
 
 Hotkeys:
 
-ABS+ : ALT+G
-ABS- : ALT+R
-TC1+ : ALT+W
-TC1- : ALT+K
-TC2+ : ALT+J
-TC2- : ALT+D
-ING  : ALT+S
-LIGHT: ALT+Q
+ABS+ : G
+ABS- : R
+TC1+ : W
+TC1- : K
+TC2+ : J
+TC2- : D
+ING  : S
+LIGHT: Q
 
 Ordnerverzeichnis:
 
@@ -23,4 +23,19 @@ DE: In diesem Verzeichnis liegt die Anwendung in deutscher ausführung
 EN: In diesem Verzeichnis liegt die Anwendung in englischer ausführung
 Development: In diesem Verzeichnis liegt die Entwicklungsvarriante der Anwendung, wo noch mehr Debugging
              Zeilen vorhanden sind
-PNG: Verzeichnis mit Logos
+
+Dependencis:
+
+Server:
+    Python 11.x oder neuer
+    pyautogui
+    socket
+
+UI:
+    Python 11.x oder neuer
+    tkinter
+    socket
+
+Anmerkung:
+Das Programm befindet sich noch in der Entwicklung und kann noch
+fehler beinhalten, diese gerne bei Github in den Issues melden
